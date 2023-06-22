@@ -7,7 +7,9 @@ function _saveCars() {
 }
 
 class CarsService {
+
   deleteCar(carId) {
+
     const carIndex = AppState.cars.findIndex(car => car.id == carId)
 
     console.log('car index', carIndex);
@@ -29,8 +31,6 @@ class CarsService {
     _saveCars()
 
     AppState.emit('cars')
-
-
   }
 
 }
